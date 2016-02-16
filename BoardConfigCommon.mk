@@ -15,30 +15,18 @@
 # Inherit from msm8226-common
 -include device/samsung/msm8226-common/BoardConfigCommon.mk
 
-TARGET_OTA_ASSERT_DEVICE := matissewifi,matissewifiue,matissewifixx
-
-DEVICE_PATH := device/samsung/matissewifi
-
-# Audio
-#AUDIO_FEATURE_ENABLED_MULTI_VOICE_SESSIONS := true
-#AUDIO_FEATURE_SAMSUNG_DUAL_SIM := true
+SUB_DEVICE_PATH := device/samsung/matisse-common
 
 # Bluetooth
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
-
-# Init
-TARGET_LIBINIT_DEFINES_FILE := $(DEVICE_PATH)/init/init_matissewifi.cpp
-TARGET_UNIFIED_DEVICE := true
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(SUB_DEVICE_PATH)/bluetooth
 
 # Kernel
-BOARD_CUSTOM_BOOTIMG_MK := $(DEVICE_PATH)/mkbootimg.mk
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_CMDLINE := console=null androidboot.console=null androidboot.hardware=qcom user_debug=23 msm_rtb.filter=0x37  androidboot.selinux=permissive
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_KERNEL_SEPARATED_DT := true
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x02000000 --tags_offset 0x1e00000
-TARGET_KERNEL_SOURCE := kernel/samsung/matissewifi
-TARGET_KERNEL_CONFIG := cyanogenmod_matissewifi_defconfig
+TARGET_KERNEL_SOURCE := kernel/samsung/matisse
 
 # Lights
 TARGET_PROVIDES_LIBLIGHT := true
@@ -48,15 +36,7 @@ BOARD_FLASH_BLOCK_SIZE := 131072
 BOARD_BOOTIMAGE_PARTITION_SIZE := 0x00A00000
 BOARD_CACHEIMAGE_PARTITION_SIZE := 721420288
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 0x01A7DEA0
-BOARD_SYSTEMIMAGE_PARTITION_SIZE := 2097152000
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 12562627584
-TARGET_USERIMAGES_USE_F2FS := true
-
-# Properties
-TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 
 # Recovery
-TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/fstab.qcom
-
-# Releasetools
-TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
+TARGET_RECOVERY_FSTAB := $(SUB_DEVICE_PATH)/rootdir/fstab.qcom

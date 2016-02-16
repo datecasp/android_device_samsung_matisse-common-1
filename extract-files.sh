@@ -1,9 +1,4 @@
-#!/bin/sh
-
-set -e
-
-export DEVICE=matissewifi
-export VENDOR=samsung
+#!/bin/bash
 
 function extract() {
     for FILE in `egrep -v '(^#|^$)' $1`; do
@@ -51,9 +46,13 @@ else
   fi
 fi
 
+BASE=../../../vendor/$VENDOR/matisse-common/proprietary
+rm -rf $BASE/*
+
 DEVBASE=../../../vendor/$VENDOR/$DEVICE/proprietary
 rm -rf $DEVBASE/*
 
+extract ../../$VENDOR/matisse-common/proprietary-files.txt $BASE
 extract ../../$VENDOR/$DEVICE/proprietary-files.txt $DEVBASE
 
 ./setup-makefiles.sh

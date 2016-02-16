@@ -8,7 +8,11 @@
     "target_path": "device/samsung/msm8226-common"
   },
   {
-    "repository": "android_kernel_samsung_matissewifi",
+    "repository": "android_kernel_samsung_matisse",
     "target_path": "kernel/samsung/matissewifi"
+  }
+  {
+    "repository": "android_vendor_samsung_matisse",
+    "target_path": "vendor/samsung/matissewifi"
   }
 ]
