@@ -15,9 +15,9 @@
 # Inherit from msm8226-common
 -include device/samsung/msm8226-common/BoardConfigCommon.mk
 
-TARGET_OTA_ASSERT_DEVICE := s3ve3g,s3ve3gds,s3ve3gjv
+TARGET_OTA_ASSERT_DEVICE := matissewifi,matissewifiue,matissewifixx
 
-DEVICE_PATH := device/samsung/s3ve3g
+DEVICE_PATH := device/samsung/matissewifi
 
 # Audio
 #AUDIO_FEATURE_ENABLED_MULTI_VOICE_SESSIONS := true
@@ -27,7 +27,7 @@ DEVICE_PATH := device/samsung/s3ve3g
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
 
 # Init
-TARGET_LIBINIT_DEFINES_FILE := $(DEVICE_PATH)/init/init_s3ve3g.cpp
+TARGET_LIBINIT_DEFINES_FILE := $(DEVICE_PATH)/init/init_matissewifi.cpp
 TARGET_UNIFIED_DEVICE := true
 
 # Kernel
@@ -37,8 +37,8 @@ BOARD_KERNEL_CMDLINE := console=null androidboot.console=null androidboot.hardwa
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_KERNEL_SEPARATED_DT := true
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x02000000 --tags_offset 0x1e00000
-TARGET_KERNEL_SOURCE := kernel/samsung/s3ve3g
-TARGET_KERNEL_CONFIG := cyanogenmod_s3ve3g_defconfig
+TARGET_KERNEL_SOURCE := kernel/samsung/matissewifi
+TARGET_KERNEL_CONFIG := cyanogenmod_matissewifi_defconfig
 
 # Lights
 TARGET_PROVIDES_LIBLIGHT := true
@@ -47,7 +47,7 @@ TARGET_PROVIDES_LIBLIGHT := true
 BOARD_FLASH_BLOCK_SIZE := 131072
 BOARD_BOOTIMAGE_PARTITION_SIZE := 0x00A00000
 BOARD_CACHEIMAGE_PARTITION_SIZE := 721420288
-BOARD_RECOVERYIMAGE_PARTITION_SIZE := 0x00A7DEA0
+BOARD_RECOVERYIMAGE_PARTITION_SIZE := 0x01A7DEA0
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 2097152000
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 12562627584
 TARGET_USERIMAGES_USE_F2FS := true
