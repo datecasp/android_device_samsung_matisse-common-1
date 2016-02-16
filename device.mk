@@ -13,6 +13,7 @@
 # limitations under the License.
 
 # Overlay
+PRODUCT_CHARACTERISTICS := tablet
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
 # Proprietary files
