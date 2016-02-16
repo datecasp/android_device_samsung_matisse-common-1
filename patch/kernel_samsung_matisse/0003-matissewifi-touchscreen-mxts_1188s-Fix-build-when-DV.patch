@@ -1,7 +1,7 @@
 From cf4845ae7fc3ddda79b2575e6e73aeb35a48bcdd Mon Sep 17 00:00:00 2001
 From: sub77 <sub77@ymail.com>
 Date: Tue, 16 Feb 2016 06:05:21 +0100
-Subject: [PATCH 3/3] matissewifi: touchscreen: mxts_1188s: Fix build when DVFS
+Subject: [PATCH 3/7] matissewifi: touchscreen: mxts_1188s: Fix build when DVFS
  is disabled
 
 Change-Id: I232facdc46fe8aa5a32760bd2880bf1424dc26c4

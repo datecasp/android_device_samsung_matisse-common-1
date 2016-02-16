@@ -1,7 +1,7 @@
 From f99b38181077b0279fd52d9142c6566185dcbd91 Mon Sep 17 00:00:00 2001
 From: sub77 <sub77@ymail.com>
 Date: Tue, 16 Feb 2016 06:04:55 +0100
-Subject: [PATCH 2/3] matissewifi: variant defconfig + cyanogenmod defconfig
+Subject: [PATCH 2/7] matissewifi: variant defconfig + cyanogenmod defconfig
 
 Change-Id: If4acca078b108e260b7638f672c00a707523282a
 ---

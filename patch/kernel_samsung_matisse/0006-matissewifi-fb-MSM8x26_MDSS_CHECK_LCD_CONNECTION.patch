@@ -1,0 +1,26 @@
+From 9ba536701ac0d37b40af3da221e5d89bf7958a3e Mon Sep 17 00:00:00 2001
+From: sub77 <sub77@ymail.com>
+Date: Tue, 16 Feb 2016 11:53:48 +0100
+Subject: [PATCH 6/7] matissewifi: fb: MSM8x26_MDSS_CHECK_LCD_CONNECTION
+
+Change-Id: I7c40145548e8ba257d6e5383b1d6e27c69a71b01
+---
+ arch/arm/configs/cyanogenmod_matissewifi_defconfig | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/arch/arm/configs/cyanogenmod_matissewifi_defconfig b/arch/arm/configs/cyanogenmod_matissewifi_defconfig
+index 43c42c0..52e3480 100644
+--- a/arch/arm/configs/cyanogenmod_matissewifi_defconfig
++++ b/arch/arm/configs/cyanogenmod_matissewifi_defconfig
+@@ -2821,7 +2821,7 @@ CONFIG_FB_MSM_MDSS_TC_DSI2LVDS_WXGA_PANEL=y
+ # CONFIG_FB_MSM_MIPI_SAMSUNG_TFT_VIDEO_WQXGA_PT_PANEL is not set
+ # CONFIG_FB_MSM_MDSS_MAGNA_OCTA_VIDEO_720P_PANEL is not set
+ # CONFIG_EDP_EXTERNAL_POWER is not set
+-# CONFIG_FB_MSM8x26_MDSS_CHECK_LCD_CONNECTION is not set
++CONFIG_FB_MSM8x26_MDSS_CHECK_LCD_CONNECTION=y
+ # CONFIG_GET_LCD_ATTACHED is not set
+ # CONFIG_WHITE_PANEL is not set
+ # CONFIG_DSI_HOST_DEBUG is not set
+-- 
+2.7.0.rc3
+
