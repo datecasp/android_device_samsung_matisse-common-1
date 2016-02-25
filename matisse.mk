@@ -17,7 +17,7 @@ PRODUCT_CHARACTERISTICS := tablet
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
 # Proprietary files
-$(call inherit-product, vendor/samsung/matisse-common/matisse-common-vendor.mk)
+$(call inherit-product-if-exists, vendor/samsung/matisse-common/matisse-common-vendor.mk)
 
 # Audio configuration
 PRODUCT_COPY_FILES += \
