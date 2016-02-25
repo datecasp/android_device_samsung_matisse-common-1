@@ -1,7 +1,7 @@
 From 2e3cf87fe045ba80c56b359d6feef917bfdd7323 Mon Sep 17 00:00:00 2001
 From: sub77 <sub77@ymail.com>
 Date: Tue, 16 Feb 2016 11:45:06 +0100
-Subject: [PATCH 4/7] matissewifi: defconfig: leds_gpio
+Subject: [PATCH 4/8] matissewifi: defconfig: leds_gpio
 
 Change-Id: Ief83e16a6e819ec44cabad257fbf08998a1992f7
 ---

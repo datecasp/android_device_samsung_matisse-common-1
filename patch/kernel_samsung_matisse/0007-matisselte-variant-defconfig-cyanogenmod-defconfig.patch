@@ -1,7 +1,7 @@
 From dcfcbcc600eb673814d6467e939eaf7485957fa1 Mon Sep 17 00:00:00 2001
 From: sub77 <sub77@ymail.com>
 Date: Tue, 16 Feb 2016 11:54:03 +0100
-Subject: [PATCH 7/7] matisselte: variant defconfig + cyanogenmod defconfig
+Subject: [PATCH 7/8] matisselte: variant defconfig + cyanogenmod defconfig
 
 Change-Id: If790ea2f6e499994b6cf5375577bb994d0093b34
 ---

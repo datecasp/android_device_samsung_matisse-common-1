@@ -1,7 +1,7 @@
 From 9ba536701ac0d37b40af3da221e5d89bf7958a3e Mon Sep 17 00:00:00 2001
 From: sub77 <sub77@ymail.com>
 Date: Tue, 16 Feb 2016 11:53:48 +0100
-Subject: [PATCH 6/7] matissewifi: fb: MSM8x26_MDSS_CHECK_LCD_CONNECTION
+Subject: [PATCH 6/8] matissewifi: fb: MSM8x26_MDSS_CHECK_LCD_CONNECTION
 
 Change-Id: I7c40145548e8ba257d6e5383b1d6e27c69a71b01
 ---
