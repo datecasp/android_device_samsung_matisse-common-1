@@ -31,9 +31,12 @@ vendor/lib/libbtnv.so
 # Camera
 bin/mm-qcamera-daemon
 lib/hw/camera.msm8226.so:lib/hw/camera.vendor.msm8226.so
+lib/libarcsoft_flawlessface.so
+#lib/libarcsoft_night_shot.so  - dont exist
 lib/libarcsoft_panorama_burstcapture.so
-lib/libarcsoft_selfie_camera_lite.so
+# lib/libarcsoft_picaction.so  - dont exist
 lib/libarcsoft_sensorndk.so
+lib/libarcsoft_skin_soften.so
 lib/libmmcamera_cac.so
 lib/libmmcamera_cac2_lib.so
 lib/libmmcamera_fidelix_eeprom.so
@@ -142,10 +145,14 @@ lib/libwvm.so
 vendor/lib/libWVStreamControlAPI_L1.so
 
 # GPS
+-app/com.qualcomm.location/com.qualcomm.location.apk
+etc/permissions/com.qualcomm.location.xml
+lib/hw/flp.default.so
 lib/libloc_api_v02.so
 vendor/lib/libgeofence.so
 vendor/lib/libizat_core.so
 vendor/lib/liblbs_core.so
+vendor/lib/liblocationservice.so
 
 # Graphics
 vendor/lib/egl/eglsubAndroid.so
@@ -184,10 +191,11 @@ vendor/lib/libSHIMDivxDrm.so
 
 # Perf
 bin/mpdecision
-vendor/lib/libqti-perfd-client.so
+vendor/lib/libqc-opt.so
 
 # Sensors
-lib/hw/sensors.msm8226.so:vendor/lib/hw/sensors.msm8226.so
+lib/hw/sensors.msm8226.so
+# lib/libyasalgo.so - dont exist
 
 # Thermal
 bin/thermal-engine
