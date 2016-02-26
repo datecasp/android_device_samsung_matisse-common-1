@@ -68,7 +68,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/atmel_mxt_ts.kl:system/usr/keylayout/atmel_mxt_ts.kl \
 
 # Default Properties
-ADDITIONAL_DEFAULT_PROPERTIES += ro.adb.secure=0 persist.sys.usb.config=mtp,adb
+ADDITIONAL_DEFAULT_PROPERTIES += ro.secure=0 ro.adb.secure=0 persist.sys.usb.config=mtp
 
 # Inherit from qcom-common
 $(call inherit-product, device/samsung/msm8226-common/msm8226.mk)
