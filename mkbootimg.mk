@@ -32,6 +32,9 @@ $(INSTALLED_BOOTIMAGE_TARGET): $(MKBOOTIMG) $(INTERNAL_BOOTIMAGE_FILES) $(INSTAL
 	$(hide) $(call assert-max-image-size,$@,$(BOARD_BOOTIMAGE_PARTITION_SIZE),raw)
 	$(hide) echo -n "SEANDROIDENFORCE" >> $(PRODUCT_OUT)/boot.img
 	@echo -e ${CL_CYN}"Made boot image: $@"${CL_RST}
+	ifeq ($(TARGET_KERNEL_SEANDROIDENFORCE),true)
+		$(hide) echo -n "SEANDROIDENFORCE" >> $(PRODUCT_OUT)/boot.img
+	endif
 
 ## Overload recoveryimg generation: Same as the original, + --dt arg
 $(INSTALLED_RECOVERYIMAGE_TARGET): $(MKBOOTIMG) $(INSTALLED_DTIMAGE_TARGET) \
