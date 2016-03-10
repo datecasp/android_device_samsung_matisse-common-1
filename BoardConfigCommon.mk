@@ -45,3 +45,9 @@ TARGET_RECOVERY_FSTAB := $(SUB_DEVICE_PATH)/rootdir/fstab.qcom
 
 # ANT+
 BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
+
+# Keymaster
+TARGET_KEYMASTER_WAIT_FOR_QSEE := true
+
+# Protobuf-c
+PROTOBUF_SUPPORTED := true
