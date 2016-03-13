@@ -264,3 +264,9 @@ vendor/lib/libthermalioctl.so
 bin/time_daemon
 vendor/lib/libtime_genoff.so
 vendor/lib/libTimeService.so
+
+# exFAT
+bin/fsck.exfat
+bin/mount.exfat
+lib/libexfat_utils.so
+
