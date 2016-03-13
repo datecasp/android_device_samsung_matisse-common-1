@@ -81,6 +81,16 @@ PRODUCT_PACKAGES += \
    com.dsi.ant.antradio_library \
    libantradio
 
+# OpenSSH
+PRODUCT_PACKAGES += \
+    ssh \
+    sftp \
+    scp \
+    sshd \
+    ssh-keygen \
+    sshd_config \
+    start-ssh
+
 # Default Properties
 ADDITIONAL_DEFAULT_PROPERTIES += ro.secure=0 ro.adb.secure=0 persist.sys.usb.config=mtp
 
